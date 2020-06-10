@@ -1,0 +1,48 @@
+.news
+  padding-top: 77px
+  padding-bottom: 82px
+  background-color: $main-bg-color
+  &-blocks
+    display: flex
+    & :last-child
+      margin-right: 0px
+
+  &-block
+    margin-right: 12px
+    flex-basis: 25%
+    background-color: #fff
+
+    &__img
+      position: relative
+      height: 227px
+      margin-bottom: 40px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%
+        background-color: #10161e
+        opacity: 0.5
+      &-1
+        background: url(../img/news/img-1.jpg) center no-repeat
+        background-size: cover
+      &-2
+        background: url(../img/news/img-2.jpg) center no-repeat
+        background-size: cover
+      &-3
+        background: url(../img/news/img-3.jpg) center no-repeat
+        background-size: cover
+      &-4
+        background: url(../img/news/img-4.jpg) center no-repeat
+        background-size: cover
+
+    &__text
+      margin-bottom: 35px
+      text-align: center
+      font-size: 16px
+      font-weight: 700
+    &__date
+      margin-left: 26px
+      margin-bottom: 39px

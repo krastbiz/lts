@@ -1,0 +1,363 @@
+@media (max-width: 1200px)
+	/* header section */
+	.header
+		&-logo
+			&::before
+				left: -30px
+			&::after
+				right: -30px
+		&-contacts
+			flex-direction: column
+			align-items: flex-end
+			&__phone
+				margin-right: 0px
+				margin-bottom: 10px
+
+	/* service section */
+	.service
+		&-block
+			flex-basis: 49%
+			&__text
+				flex-direction: column
+
+
+
+	/* ---- PAGE ---- */
+	.page
+		&-nav
+			&__item
+				width: 100%
+
+	/* feedback section*/
+	.feedback
+		&-form
+			&__input
+				width: 280px
+	
+
+@media (max-width: 992px)
+ /* header section */
+ .header
+		&-logo
+			&::before
+				display: none
+			&::after
+				display: none
+
+	/* service section */
+	.service
+		&-block
+			&__img
+				margin-left: 40px
+
+	/* info section */
+	.info
+		padding-top: 80px
+		padding-bottom: 80px
+		&-text
+			text-align: center
+			margin-left: 0px
+		&-img
+			display: none
+
+	/* news section */
+	.news
+		&-blocks
+			flex-wrap: wrap
+		&-block
+			flex-basis: 48%
+
+	/* partners section */
+	.partners
+		&-blocks
+			flex-wrap: wrap
+			justify-content: space-around
+		&-block
+			flex-basis: 49%
+
+	/* footer section */
+	.footer
+		&-nav
+			flex-direction: column
+			&__item
+				margin-right: 0px
+				margin-bottom: 5px
+				&::after
+					bottom: -5px
+		&-rights
+			flex-direction: column
+			justify-content: center
+
+
+	/* form section */
+	.form
+		&-input
+			width: 277px
+
+	/* ---- PAGE ---- */
+
+	/* feedback section*/
+	.feedback
+		&-form
+			&__input
+				width: 210px
+	
+	.table
+	  font-size: 10px
+	  &-head
+	    tr
+	      th
+	        padding-right: 0px
+	        padding-left: 0px
+	      & :first-child
+	        padding-left: 0px
+	      & :last-child
+	        padding-right: 0px
+	        border-right: none
+	      
+	  &-body
+	    tr
+	      td
+	        padding-right: 0px
+	        padding-left: 0px
+	      & :first-child
+	        padding-left: 0px
+	      & :last-child
+	        padding-right: 0px
+
+
+@media (min-width: 769px)
+	.hidden-desktop
+		display: none
+
+@media (max-width: 768px)
+	.hidden-mobile
+		display: none
+
+
+
+
+
+@media (max-width: 768px)
+	.section
+		&-title
+			&::before, &::after
+				display: none
+
+	/* header section */
+	.header
+		&-logo
+			text-align: start
+		&-text
+			display: none
+		&-contacts
+			flex-direction: row
+			align-items: center
+			button
+				padding: 18px 20px
+			&__phone
+				margin-bottom: 0px
+				margin-right: 26px
+		&-nav
+			&__item
+				margin-right: 25px
+				font-size: 15px
+	/* service section */
+	.service
+		&-block
+			margin-right: 0px
+			flex-basis: 100%
+			&__text
+				flex-direction: column
+			&__img
+				margin-left: 59px
+
+
+	/* news section */
+	.news
+		&-blocks
+			flex-wrap: wrap
+		&-block
+			margin-right: 0px
+			flex-basis: 100%
+
+
+	/* slider section */
+	.slider
+		&-item
+			text-align: center
+			&__text
+				font-size: 36px
+				text-align: center
+			&__descr
+				font-size: 14px
+				text-align: center
+			&__btn
+				text-align: center
+
+	/* form section */
+	.form
+		&-input
+			width: 230px
+			margin-right: 10px
+
+	/* modal section */
+	.popup
+		padding-left: 45px
+		padding-right: 45px
+
+	/* ---- PAGE ---- */
+	.page
+		&-nav
+			margin-bottom: 22px
+			&-content
+				&__subitem
+					&-content
+						flex-wrap: wrap
+						&__img
+							margin-right: 0px
+							margin-bottom: 10px
+							flex-basis: 100%
+							img
+								min-width: 100%
+			&__item
+				justify-content: center
+				&::before
+					display: none
+			&__text
+				margin-left: 0px
+			&__title
+				text-align: center
+			&-content
+				&__title
+					text-align: center
+				&__subtitle
+					text-align: center
+
+				&__subitem
+					text-align: center
+
+	/* feedback section */
+	.feedback
+		padding-bottom: 53px
+		&-title
+			text-align: center
+		&-list
+			text-align: center
+		&-form
+			text-align: center
+			&__input
+				margin-bottom: 10px
+				width: 100%
+				text-align: center
+			&__textarea
+				text-align: center
+
+
+@media (max-width: 576px)
+	/* header section */
+	.header
+		padding-top: 30px
+		padding-bottom: 30px
+		&-nav
+			padding: 20px
+			margin-top: 30px
+			width: 100%;
+			position: absolute
+			left: 0
+			display: flex
+			flex-direction: column
+			transform: translateY(-500px)
+			transition: all 0.1s
+			background-color: rgba(0,0,0, .5)
+
+			& :last-child
+				margin-bottom: 0px
+			&__item
+				margin-right: 0px
+				margin-bottom: 10px
+				&::after
+					bottom: -3px
+			&__btn
+				&-mobile
+					display: block
+			&_active
+			  position: absolute
+			  top: 50%
+			  transform: translateY(0px)
+			  transition: all 0.1s
+
+		&-logo
+			display: none
+		&-contacts
+			&__phone
+				margin-right: 22px
+			&__btn
+				button
+					padding: 8px 10px
+
+	/* service section */
+	.service
+		&-blocks
+			margin-left: 0px
+			margin-right: 0px
+		&-block
+			justify-content: space-around
+			&__img
+				margin-left: 0px
+			&__text
+				margin-right: 0px
+
+	/* partners section */
+	.partners
+		&-block
+			&-1
+		    background: url(../img/partners/icon-1_active.png) center no-repeat
+			&-2
+		    background: url(../img/partners/icon-2_active.png) center no-repeat
+			&-3
+		    background: url(../img/partners/icon-3_active.png) center no-repeat
+			&-4
+		    background: url(../img/partners/icon-1_active.png) center no-repeat
+			&-5
+		    background: url(../img/partners/icon-2_active.png) center no-repeat
+
+	/* footer section */
+	
+
+	/* form section */
+	.form
+		&-input
+			width: 100%
+			margin-right: 0px
+			margin-bottom: 10px
+			&__group
+				flex-wrap: wrap
+
+	/* popup section */
+	.popup
+		width: 90%
+
+@media (max-width: 478px)
+
+	/* footer section */
+	.footer
+		&-rights
+			display: none
+		&-nav
+			align-items: flex-end
+
+	/* popup section */
+	.popup
+		padding-left: 35px
+		padding-right: 35px
+		&-title
+			font-size: 20px
+
+	/* ---- PAGE ----- */
+	.feedback
+		padding-bottom: 23px
+		&-form
+			margin-bottom: 0px
+		&-table
+			display: none

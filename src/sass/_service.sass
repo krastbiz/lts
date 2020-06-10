@@ -1,0 +1,83 @@
+.service
+	background-color: $main-bg-color
+	&-card
+		padding-top: 50px
+		background-color: $main-bg-color
+		transform: translateY(-117px)
+	&-blocks
+		display: flex
+		flex-wrap: wrap
+		margin-left: 35px
+		margin-right: 35px
+	&-block
+		margin-right: 3px
+		margin-bottom: 3px
+		flex-basis: 33%
+		
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 180px
+
+		background-color: #ffffff
+		&:hover
+			background-color: #272e3c
+			.service
+				&-block
+					&__btn
+						display: block
+					&__title
+						color: #fff
+						margin-bottom: 19px
+					&__img
+						&-1
+							background: url(../img/service/icon-1-active.png) center no-repeat
+						&-2
+							background: url(../img/service/icon-2-active.png) center no-repeat
+						&-3
+							background: url(../img/service/icon-3-active.png) center no-repeat
+						&-4
+							background: url(../img/service/icon-4-active.png) center no-repeat
+						&-5
+							background: url(../img/service/icon-5-active.png) center no-repeat
+						&-6
+							min-width: 63px
+							background: url(../img/service/icon-6-active.png) center no-repeat
+
+
+		&__img
+			margin-left: 59px
+			display: flex
+			align-items: center
+			min-height: 56px
+			min-width: 56px
+			background-size: cover
+			&-1
+				background: url(../img/service/icon-1.png) center no-repeat
+			&-2
+				background: url(../img/service/icon-2.png) center no-repeat
+			&-3
+				background: url(../img/service/icon-3.png) center no-repeat
+			&-4
+				background: url(../img/service/icon-4.png) center no-repeat
+			&-5
+				min-width: 63px
+				background: url(../img/service/icon-5.png) center no-repeat
+			&-6
+				background: url(../img/service/icon-6.png) center no-repeat
+
+		&__text
+			margin-right: 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: flex-end
+		&__title
+			text-align: end
+			color: $main-text-color
+			transition: all 0.1s
+		&__btn
+			display: none

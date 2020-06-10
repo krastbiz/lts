@@ -1,0 +1,22 @@
+.features
+  position: relative
+  height: 572px
+  background: #000000 url(../img/features/features-bg.png) center no-repeat
+  background-size: cover
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: url(../img/features/features-bg_shadow.png) center no-repeat
+    background-size: cover
+
+  &-slider
+    height: 100%
+    &__item
+      height: 572px
+      text-align: end
+    &__dots
+      bottom: 30px
